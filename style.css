@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Tangerine', cursive;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    min-height: 100vh;
+} 
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#ffeb3b,#e91e63);
+}
+.oyee{
+    position: relative;
+    text-align: center;
+    font-size: 160px;
+    color: #fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.yo
+{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+section h2:before
+{
+    content: '';
+    position: absolute;
+    top: -44px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    border-left: 15px solid #fff;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    box-shadow: -14px 1px 10px rgba(0,0,0,0.1);
+}
+.mosque{
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: url('mosque.png');
+    background-repeat: repeat-x;
+    background-size: 1200px;
+    z-index: 1;
+    pointer-events: none;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate
+{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1200px;
+    }
+}
+.mosque{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: url('mosque.png');
+    background-repeat: repeat-x;
+    background-size: 1200px;
+    z-index: 1;
+    pointer-events: none;
+    animation: animate 20s linear infinite;
+}
+@keyframes animate
+{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1200px;
+    }
+}
+.mosque::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background: url('mosque.png');
+    background-repeat: repeat-x;
+    background-size: 1600px;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.1;
+    animation: animateReverse 40s linear infinite;
+}
+@keyframes animateReverse
+{
+    0%{
+        background-position: 1600px;
+    }
+    100%{
+        background-position: 0px;
+    }
+}
+.particles-js-canvas-el{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .text{
+        position: relative;
+        bottom: 85px;
+    }
+    .oyee{
+        font-size: 15vw;
+    }
+    .yo{
+        font-size: 6vw;
+    }
+    section h2:before{
+        top: -212px;
+        left: 14px;
+    }
+}
+@media screen and (max-width: 700px) {
+    section h2:before{
+        top: -169px;
+        left: 25px;
+        width: 132px;
+        height: 114px;
+    }
+}
+@media screen and (max-width: 450px) {
+    section h2:before{
+        top: -113px;
+        left: 25px;
+        width: 94px;
+        height: 74px;
+    }
+}
