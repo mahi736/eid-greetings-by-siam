@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Eid-Ul-Fitr</a>
+        <div class="toggle"></div>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="stars2.png" id="stars2">
+        <img src="moon.png" id="moon">
+        <h2 id="text">Eid Mubarak</h2>
+        <img src="rock.png" id="rock">
+        <img src="masjid.png" id="masjid">
+        <img src="bottom.png" id="bottom">
+        <img src="lamp.png" id="lamp">
+    </section>
+    <div class="sec">
+        <h2>
+            Happy Eid Mubarak to You & Your Family
+        </h2>
+        <p>Eid is the biggest festival for Muslims. The Almighty Allah blessed them with two joys eid day each year. The first one is “Eid-Al-Fitr” which comes after one month of fasting during the holy month of “Ramadan“ and “Eid-Al-Adha” which is called the “Sacrifice Feast”, is the second of two biggest Islamic holidays celebrated worldwide each year. <br> <br> Eid is a day to cheer and to laugh with all your heart. It’s a day to be grateful to Allah for all of his heavenly blessings on us. My good wishes for you are the just prayers for your long happy life from Allah on this noble event. Let this day bring new hope and opportunities in your life. May you welcome them with an open mind and fresh thoughts. May this Eid-Ul-Fitr be a special one for you and may it bring you many happy moments to cherish forever!</p>
+    </div>
+    <script>
+
+       let stars = document.getElementById('stars');
+       let stars2 = document.getElementById('stars2');
+       let moon = document.getElementById('moon');
+       let rock = document.getElementById('rock');
+       let masjid = document.getElementById('masjid');
+       let text = document.getElementById('text');
+       let header = document.getElementById('header');
+
+       window.addEventListener('scroll', function(){
+           let value = window.scrollY;
+        //    stars.style.bottom = value * 0.05 + '%';
+        //    stars2.style.bottom = value * 0.25 + '%';
+        //    moon.style.bottom = value * -0.5 + 'px';
+        //    rock.style.bottom = value * -0.75 + 'px';
+        //    masjid.style.bottom = value * -0.15 + 'px';
+
+        //    text.style.right = -100 + value * 0.5 + '%';
+        //    text.style.top = 50 + value * 0.1 + '%';
+
+        //    header.style.top = value * 0.5 + 'px';
+       })
+
+        const toggleMenu = document.querySelector('.toggle');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.onclick = function(){
+            toggleMenu.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
